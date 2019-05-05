@@ -4,6 +4,9 @@
     "standard"
   ],
   "rules": {
+    "camelcase": [
+      "off"
+    ],
     "indent": [
       "error",
       2,
