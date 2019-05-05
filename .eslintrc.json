@@ -1,0 +1,54 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "standard"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "curly": [
+      "error",
+      "multi"
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "no-sequences": [
+      "off"
+    ],
+    "no-undef": "off",
+    "react/forbid-prop-types": 2,
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
+    "react-hooks/rules-of-hooks": "error"
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
