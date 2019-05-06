@@ -14,6 +14,7 @@ export type User = {
     id: string,
     name: string,
     real_name: string,
+    deleted: boolean,
     profile: {
         display_name: string,
         image_72: string,
@@ -28,6 +29,7 @@ function simpleUser (user: any): User {
     'id',
     'name',
     'real_name',
+    'deleted',
     'profile.display_name',
     'profile.image_72',
     'profile.status_text',

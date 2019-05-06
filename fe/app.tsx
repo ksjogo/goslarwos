@@ -24,7 +24,7 @@ function Display ({ data }: { data: User[] }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map(row => (
+          {data.filter(row => !row.deleted).map(row => (
             <TableRow key={row.id}>
               <TableCell component="th" scope="row">
                 <Avatar src={row.profile.image_72} />
